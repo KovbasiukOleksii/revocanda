@@ -33,5 +33,7 @@ $('.specialist__slider').slick({
 
 $('.quote__specialist').slick({
     autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
 });
    
