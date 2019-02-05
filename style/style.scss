@@ -13,7 +13,9 @@
     font-family: OpenSans;
     box-sizing: border-box;
 }
-
+html {
+            overflow: hidden;
+}
 .navbar {
     padding: 0;
     margin: 0;
@@ -104,7 +106,6 @@ header {
 .specialist {
     background-color: #F7F8FA;
     text-align: center;
-    height: 100vh;
     
     h2 {
         padding-top: 90px;
@@ -162,11 +163,13 @@ header {
 /* ==============MODAL=========== */
 .modal-dialog {
     max-width: 80%;
+    
 }
 @media only screen and (max-width: 575px) {
     .modal-dialog {
-        width: 300px;
-        margin: 0 auto;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .modal-title {
