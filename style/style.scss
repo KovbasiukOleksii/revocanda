@@ -1,0 +1,260 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/2211.ttf); 
+}
+@font-face {
+    font-family: OpenSansBold;
+    src: url(fonts/2204.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    height: 75px;
+    padding-top: 25px;
+    
+    &:hover {
+        border-bottom: 2px solid red;
+    }
+    
+    a {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .nav-link {
+        height: 25px;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+}
+.navbar-light 
+.navbar-nav 
+.nav-link {
+    color: #0075D1;
+    
+    &:hover {
+        color: #0075D1;
+    }
+}
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    min-width: 100%;
+}
+.dropdown-item {
+    padding: 3px 2px;
+}
+header {
+    background: url(../img/header.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    
+    h1 {
+        text-transform: uppercase;
+        font-size: 32px;
+        padding-top: 200px;
+        font-family: OpenSansBold;
+    }
+    
+    p {
+        font-size: 18px;
+        padding-top: 35px;
+        padding-bottom: 100px;
+    }
+
+}
+.btn-outline-primary {
+    border-color: #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: OpenSansBold;
+    font-size: 18px;
+}
+    
+.btn {
+    padding: 10px 0;
+    margin-bottom: 200px;
+}
+
+.bg {
+    background-color: #000;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.specialist {
+    background-color: #F7F8FA;
+    text-align: center;
+    height: 100vh;
+    
+    h2 {
+        padding-top: 90px;
+        padding-bottom: 40px;
+        font-family: OpenSansBold;
+        color: #0075D1;
+    }
+}
+.slide {
+    cursor: pointer;
+    position: relative;
+    
+    img {
+        margin: 0 auto;
+    }
+}
+.info {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    
+    p {
+        padding: 0;
+        line-height: .5;
+    }
+    
+    p:nth-child(1) {
+        padding-top: 15px;
+        padding-bottom: 0;
+        font-family: OpenSansBold;
+        text-transform: uppercase;
+    }
+}
+.slide:hover .info {
+    display: block;
+    width: 233px;
+    background: #0075D1;
+    color: #fff;
+    opacity: 1;
+    transition: .5s;
+}
+@media only screen and (max-width: 1200px) {
+    .slide:hover {
+        left: 43px;
+    }
+}
+
+/* ==============MODAL=========== */
+.modal-dialog {
+    max-width: 80%;
+}
+.modal-title {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-family: OpenSansBold;
+}
+.modal-body {
+    width: 100%;
+    
+    img {
+        float: left;
+        margin-right: 2%;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    ul {
+        margin-left: 30%;
+        padding: 0;
+        list-style-image:  url(../img/done.png);
+        
+        p {
+            text-transform: uppercase;
+            font-family: OpenSansBold;
+        }
+    }   
+}
+
+.quote {
+    background: url(../img/fonquote.jpg) no-repeat center top / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    
+    
+    h2 {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .specialist__name {
+        font-family: OpenSansBold;
+        text-transform: uppercase;
+    }
+    
+}
+.regestration {
+    background: url(../img/fonregestration.jpg) no-repeat center top / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    
+    &__bg {
+        background-color: #0075D1;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+    }
+    
+    h2 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .row {
+        padding-bottom: 20px;
+    }
+    
+    .btn {
+        margin-bottom: 50px;
+    }
+    
+    .form-control {
+        background-color: transparent;
+        color: #fff;
+    }
+    ::-webkit-input-placeholder {
+        color:#fff;
+    }
+    ::-moz-placeholder {
+        color:#fff;
+    }
+    :-moz-placeholder {
+        color:#fff;
+    }
+    :-ms-input-placeholder {
+        color:#fff;
+    }
+}
+    
