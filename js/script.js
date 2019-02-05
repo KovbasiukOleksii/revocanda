@@ -32,8 +32,17 @@ $('.specialist__slider').slick({
 });
 
 $('.quote__specialist').slick({
+    dots: true,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+    {
+      breakpoint: 575,
+      settings: {
+        arrows: false,
+      }
+    },
+        ]
 });
    
