@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     font-family: OpenSans;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -77,6 +78,7 @@ header {
     }
 
 }
+
 .btn-outline-primary {
     border-color: #fff;
     color: #fff;
@@ -88,6 +90,7 @@ header {
 .btn {
     padding: 10px 0;
     margin-bottom: 200px;
+    outline: none;
 }
 
 .bg {
@@ -157,9 +160,7 @@ header {
 }
 
 /* ==============MODAL=========== */
-.modal-dialog {
-    max-width: 80%;
-}
+
 .modal-title {
     margin-left: 30px;
     text-transform: uppercase;
@@ -186,8 +187,34 @@ header {
             font-family: OpenSansBold;
         }
     }   
+    @media only screen and (max-width: 1130px) {
+        img {
+            width: 200px;
+        }
+    }
+    @media only screen and (max-width: 975px) {
+        img {
+            width: 150px;
+        }
+    }
+    @media only screen and (max-width: 785px) {
+        p,
+        ul {
+            font-size: 12px;
+        }
+    }
+    @media only screen and (max-width: 730px) {
+        img {
+            display: block;
+            float: none;
+            margin: 0 auto;
+        }
+        
+        ul {
+            margin-left: 2%;
+        }
+    }
 }
-
 .quote {
     background: url(../img/fonquote.jpg) no-repeat center top / cover;
     width: 100%;
@@ -256,5 +283,11 @@ header {
     :-ms-input-placeholder {
         color:#fff;
     }
-}
     
+    @media only screen and (max-width: 990px) {
+        input,
+        textarea {
+            margin-bottom: 10px;
+        }
+    }
+}
